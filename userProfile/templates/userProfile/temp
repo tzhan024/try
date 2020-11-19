@@ -1,0 +1,18 @@
+<ul class="navbar-nav m-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'homepage:the_homepage' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+    
+                <form class="form-inline my-2 my-lg-0">   
+                    <a class="btn btn-success btn-sm ml-3" href="{%  url 'shopping_cart:cart' %}">
+                        <i class="fa fa-shopping-cart"></i> Cart
+                        <span class="badge badge-light">3</span>
+                    </a>
+                </form>

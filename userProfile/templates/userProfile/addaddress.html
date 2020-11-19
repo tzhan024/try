@@ -1,0 +1,24 @@
+{% extends "userProfile/base.html" %}
+{% block content %}
+	<form  method = "POST">
+		{%csrf_token%}
+        <b>Address Line 1:</b>
+        <input type="text" name="address">
+        <br><br>
+        <b>City:</b>
+        <input type="text" name="city">
+        <br><br>
+        <b>State:</b>
+        <input type="text" name="state">
+        <br><br>
+		<b>Zip Code: </b>
+        <input type="text" name="zipcode">
+        <br><br>
+        <button type = "button">
+            <a href="http://127.0.0.1:8000/userprofile"><b>Go Back</b></a><br/>
+        </button>
+        <button type="submit">
+            <a href="http://127.0.0.1:8000/userprofile"><b>Submit</b></a><br/>
+        </button>
+	</form>
+{% endblock content %}

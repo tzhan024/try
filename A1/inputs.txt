@@ -1,0 +1,2 @@
+fool1.txt
+fool2.txt

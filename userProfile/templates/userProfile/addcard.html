@@ -1,0 +1,30 @@
+{% extends "userProfile/base.html" %}
+{% block content %}
+	<form  method = "POST">
+		{%csrf_token%}
+        <b>Card Holder: </b>
+        <input type="text" name="name">
+        <br><br>
+        <b>Card Number: </b>
+        <input type="text" name="cardnumber">
+        <br><br>
+        <b>Exp Date:</b>
+        <input type="text" name="expdate">
+        <br><br>
+		<b>Card Type:</b>
+        <input type="text" name="cardtype">
+        <br><br>
+		<b>cvv:</b>
+        <input type="text" name="cvv">
+        <br><br>
+        <button type = "button">
+            <a href="http://127.0.0.1:8000/userprofile"><b>Go Back</b></a><br/>
+        </button>
+        <button type="submit">
+            <a href="http://127.0.0.1:8000/userprofile"><b>Submit</b></a><br/>
+        </button>
+	</form>
+{%for message in messages%}
+	<b>{{message}}</b>
+{%endfor%} 
+{% endblock content %}
