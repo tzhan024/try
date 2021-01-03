@@ -6,6 +6,10 @@ public class hello
 	}
 }
 
+git fetch
+
+git checkout master
+
 git add .
 
 git commit -m "al"
