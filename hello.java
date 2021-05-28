@@ -18,5 +18,7 @@ git remote add origin https://github.com/tzhan024/try.git
 
 git push origin master
 
+git reset --hard origin/main (force pull)
+
 
 see if works
